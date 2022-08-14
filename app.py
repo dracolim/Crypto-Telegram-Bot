@@ -128,7 +128,7 @@ def convert_exchange_rate(update: Update, context: CallbackContext, price: int =
 
         new_price = getExchangeRate(price, currency)
 
-        message = f"{price} USD = {new_price} SGD"
+        message = f"{price} USD = {new_price} {currency}"
     # scenario 5: only currency, no price
     else:
         message = 'Enter a price (/convert_exchange_rate 128 SGD)'
