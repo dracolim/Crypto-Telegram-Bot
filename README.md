@@ -2,6 +2,9 @@
 ## Description
 Crypto-Telegram-Bot allows you to get crypto updates such as news, price, supply , volume and percentage change. 
 
+## Tech Stack
+Python, Heroku 
+
 ## Usage
 1. Downlaod the <a href = 'https://telegram.org/'>Telegram</a> app
 2. Search for the bot called <strong> know-your-crypto </strong> (@know_your_crypto_bot) or use the this <a href = 'https://t.me/know_your_crypto_bot'>Link</a>
@@ -62,3 +65,7 @@ This telegram bot is deployed on heroku using the ```Procfile``` which is in the
 3. mboum-finance - https://rapidapi.com/sparior/api/mboum-finance/ <br/>
 4. crypto-news-live3 - https://rapidapi.com/ddeshon/api/crypto-news-live3/ <br/>
 5. crypto-news14 - https://rapidapi.com/enayfls-ibksP3yFoax/api/crypto-news14/ <br/>
+
+## What's next for this bot
+1. Linking it to a database so that it allows users to build their personal portfolio
+2. Adding machine learning, creating OHLC graphs can send it to the telegram bot as an image
