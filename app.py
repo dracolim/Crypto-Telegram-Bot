@@ -2,6 +2,7 @@ from datetime import date
 from email import message
 import os
 from io import BytesIO
+from symtable import Symbol
 from urllib import request
 from telegram.ext.messagehandler import MessageHandler
 

@@ -2,11 +2,10 @@ import os
 import datetime as date
 from sqlite3 import paramstyle
 from requests import Session
-from telebot.secret import API_KEY
 from pprint import pp
 
 # pprint => pp(r.json())
-
+API_KEY = '7a831830-bf76-4d35-9866-3429ee8eeb28'
 
 class CMC:
     # DOCUMENTATION: https://coinmarketcap.com/api/documentation
@@ -136,7 +135,7 @@ class CMC:
             f"⭐ Rank: {rank} \n" + f"💲 Price: ${price} USD \n\n"  + "🗂 Volume \n" + \
             f"Volume last 24hrs: {volume_24h} \n" 
 
-            volume_change_24h = str(round(data[symbol]['quote']['USD']['volume_change_24h']),2)
+            volume_change_24h = str(round(data[symbol]['quote']['USD']['volume_change_24h'],2))
             if volume_change_24h[0] == '-':
                 message += f"Volume change last 24 hrs: 🔻 {volume_change_24h}% \n\n"
             else:
@@ -188,4 +187,4 @@ class CMC:
 # creating cmc object
 cmc = CMC(API_KEY)
 
-#pp(cmc.getInfoTicker('btc'))
+pp(cmc.getInfoTicker('btc'))
