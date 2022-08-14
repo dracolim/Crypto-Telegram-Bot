@@ -51,7 +51,7 @@ def start(update: Update, context: CallbackContext) -> None:
     top_10_command = f'\n💹 Trending \n /top_10_cryptocurrency: Top 10 cryptocurrency today \n'
     news = f'\n📰Updated News as of {DATE} \n/get_news: Get all the news from different sources \n' + \
         f"/get_news_cointelegraph: Get all the news from cointelegraph \n" + \
-        f"/get_news_of <cryptocurrency>: Get all the news about a cryptocurrency \n"
+        f"/get_news_of <ticker>: Get all the news about a cryptocurrency \n"
 
     reply_text += commands + information + price + top_10_command + news
 
