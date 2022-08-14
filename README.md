@@ -18,6 +18,8 @@ Python, Heroku
 ```
 /get_info_ticker <ticker>
 ```
+<img width="306" alt="Screenshot 2022-08-15 at 1 51 49 AM" src="https://user-images.githubusercontent.com/85498185/184548874-52c60e7a-3d2e-480e-975d-07b31e8bed3a.png">
+
 2. Get information about the cryptocurrency by name
 ```
 /get_info_name <name>
