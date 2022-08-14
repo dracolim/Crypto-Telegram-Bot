@@ -179,7 +179,7 @@ class CMC:
             max_supply = data[symbol]['max_supply']
 
             message += f"Circulating supply: {circulating_supply} \n" + \
-                f"Total suply: {total_supply} \n" + \
+                f"Total supply: {total_supply} \n" + \
                     f"Max supply: {max_supply} \n"
             
             return message
