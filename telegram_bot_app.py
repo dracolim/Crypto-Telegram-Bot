@@ -17,7 +17,6 @@ from telegram.ext import (
     ConversationHandler,
     Filters
 )
-import mplfinance as mpf
 import _thread
 
 # import all the functions from other .py files
@@ -134,17 +133,17 @@ def get_top_ten(update: Update, context: CallbackContext) -> None:
 
 
 # To get OHLC graph"
-def send_photo(update: Update, context: CallbackContext) -> None:
-    df_ohlc = getOHLCgraph()
-    fig = mpf.plot(df_ohlc, type='candle', mav=(3, 6, 9), volume=True)
+# def send_photo(update: Update, context: CallbackContext) -> None:
+#     df_ohlc = getOHLCgraph()
+#     fig = mpf.plot(df_ohlc, type='candle', mav=(3, 6, 9), volume=True)
 
-    plot_file = BytesIO()
-    fig.savefig(plot_file, format='png')
-    plot_file.seek(0)
+#     plot_file = BytesIO()
+#     fig.savefig(plot_file, format='png')
+#     plot_file.seek(0)
 
-    print(df_ohlc)
+#     print(df_ohlc)
 
-    update.message.reply_photo(plot_file)
+#     update.message.reply_photo(plot_file)
 
 
 # To get TODAY news
@@ -230,8 +229,8 @@ def main() -> None:
 
     # start the bot
     updater.start_webhook(listen="0.0.0.0",
-                          port=int(PORT),
-                          url_path=TOKEN)
+                        port=int(PORT),
+                        url_path=TOKEN)
     updater.bot.setWebhook(
         'https://know-your-crypto-telegram-bot.herokuapp.com/' + TOKEN)
     #updater.start_polling()
