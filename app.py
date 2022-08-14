@@ -52,7 +52,7 @@ def start(update: Update, context: CallbackContext) -> None:
         f"/get_news_cointelegraph: Get all the news from cointelegraph \n" + \
         f"/get_news_of CRYPTO: Get all the news about a cryptocurrency \n"
 
-    reply_text += commands + price + top_10_command + news
+    reply_text += commands + information + price + top_10_command + news
 
     update.message.reply_text(reply_text)
 

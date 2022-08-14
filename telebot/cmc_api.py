@@ -131,43 +131,43 @@ class CMC:
             price = str(round(data[symbol]['quote']['USD']['price'] , 2)) 
 
             #volume
-            volume_24h =  data[symbol]['quote']['USD']['volume_24h']
+            volume_24h =  str(round(data[symbol]['quote']['USD']['volume_24h'],2))
             message = f"Information on {symbol}: \n" + \
-            f"⭐ Rank: {rank} \n" + f"💲 Price: {price} \n\n"  + "🗂 Volume \n" + \
+            f"⭐ Rank: {rank} \n" + f"💲 Price: ${price} USD \n\n"  + "🗂 Volume \n" + \
             f"Volume last 24hrs: {volume_24h} \n" 
 
-            volume_change_24h = str(data[symbol]['quote']['USD']['volume_change_24h'])
+            volume_change_24h = str(round(data[symbol]['quote']['USD']['volume_change_24h']),2)
             if volume_change_24h[0] == '-':
-                message += f"Volume change last 24 hrs: 🔻 {volume_change_24h} \n\n"
+                message += f"Volume change last 24 hrs: 🔻 {volume_change_24h}% \n\n"
             else:
-                message += f"Volume change last 24 hrs: 🔺 {volume_change_24h} \n\n"
+                message += f"Volume change last 24 hrs: 🔺 {volume_change_24h}% \n\n"
             
             #percent change
             message += "% Percentage change\n"
-            percent_change_1h = str(data[symbol]['quote']['USD']['percent_change_1h'])
-            percent_change_24h = str(data[symbol]['quote']['USD']['percent_change_24h']) 
-            percent_change_7d = str(data[symbol]['quote']['USD']['percent_change_7d'])
-            percent_change_30d = str(data[symbol]['quote']['USD']['percent_change_30d'])
+            percent_change_1h = str(round(data[symbol]['quote']['USD']['percent_change_1h'],2))
+            percent_change_24h = str(round(data[symbol]['quote']['USD']['percent_change_24h'])) 
+            percent_change_7d = str(round(data[symbol]['quote']['USD']['percent_change_7d']))
+            percent_change_30d = str(round(data[symbol]['quote']['USD']['percent_change_30d']))
 
             if percent_change_1h[0] == '-':
-                message += f"Percent change last 1hr: 📉 {percent_change_1h} \n" 
+                message += f"Percent change last 1hr: 📉 {percent_change_1h}% \n" 
             else:
-                message += f"Percent change last 1hr: 📈 {percent_change_1h} \n"
+                message += f"Percent change last 1hr: 📈 {percent_change_1h}% \n"
             
             if percent_change_24h[0] == '-':
-                message += f"Percent change last 24hr: 📉 {percent_change_24h} \n" 
+                message += f"Percent change last 24hr: 📉 {percent_change_24h}% \n" 
             else:
-                message += f"Percent change last 24hr: 📈 {percent_change_24h} \n"
+                message += f"Percent change last 24hr: 📈 {percent_change_24h}% \n"
 
             if percent_change_7d[0] == '-':
-                message += f"Percent change last 7d: 📉 {percent_change_7d} \n" 
+                message += f"Percent change last 7d: 📉 {percent_change_7d}% \n" 
             else:
-                message += f"Percent change last 7d: 📈 {percent_change_7d} \n"
+                message += f"Percent change last 7d: 📈 {percent_change_7d}% \n"
 
             if percent_change_30d[0] == '-':
-                message += f"Percent change last 30d: 📉 {percent_change_30d} \n" 
+                message += f"Percent change last 30d: 📉 {percent_change_30d}% \n" 
             else:
-                message += f"Percent change last 30d: 📈 {percent_change_30d} \n\n"
+                message += f"Percent change last 30d: 📈 {percent_change_30d}% \n\n"
 
             #supply
             message += "🌱 Supply \n"
