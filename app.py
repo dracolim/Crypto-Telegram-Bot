@@ -63,7 +63,8 @@ def get_info_ticker(update: Update,
 ) -> None:
     symbol = update.message.text.split('/get_info_ticker')[1].strip()
 
-    message = CMC(API_KEY).getPriceByTicker(symbol)
+    message = CMC(API_KEY).getInfoTicker(symbol)
+    
     update.message.reply_text(message)
 
 
