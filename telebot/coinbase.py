@@ -20,7 +20,6 @@ import matplotlib.dates as mpl_dates
 import matplotlib.ticker as tkr
 import seaborn as sns
 
-print(sns.__version__)
 
 # Set some standard parameters upfront
 pd.options.display.float_format = '{:.1f}'.format
