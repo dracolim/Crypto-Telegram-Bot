@@ -43,7 +43,8 @@ def start(update: Update, context: CallbackContext) -> None:
     reply_text = 'Hi! I am your crypto bot 🤖. \n' + \
         f'How may I be of service today ({DATE})? \n'
 
-    commands = "\n📝 Commands \n" + "/start - get commands \n"
+    commands = "\n📝 Commands \n" + "/start - get commands \n" 
+    information = "\nℹ️ Information \n" + "/get_info_ticker TICKER: Get information by crypto symbol \n" + "/get_info_name name: Get information by crypto name \n"
     price = "\n💲 Price \n" + "/get_price_by_ticker TICKER: Get crypto price by symbol (in USD) \n" + "/get_price_by_name NAME: Get crypto price by name (in USD) \n" + \
         "/convert_exchange_rate PRICE CURRENCY: Convert price from USD to other currencies \n"
     top_10_command = f'\n💹 Trending \n /top_10_cryptocurrency: Top 10 cryptocurrency today \n'

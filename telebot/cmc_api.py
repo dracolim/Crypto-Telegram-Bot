@@ -132,7 +132,7 @@ class CMC:
 
             #volume
             volume_24h =  data[symbol]['quote']['USD']['volume_24h']
-            message = f"📊 Information on {symbol}: \n" + \
+            message = f"Information on {symbol}: \n" + \
             f"⭐ Rank: {rank} \n" + f"💲 Price: {price} \n\n"  + "🗂 Volume \n" + \
             f"Volume last 24hrs: {volume_24h} \n" 
 
@@ -143,7 +143,7 @@ class CMC:
                 message += f"Volume change last 24 hrs: 🔺 {volume_change_24h} \n\n"
             
             #percent change
-            message += "📈 📉 Percentage change"
+            message += "% Percentage change\n"
             percent_change_1h = str(data[symbol]['quote']['USD']['percent_change_1h'])
             percent_change_24h = str(data[symbol]['quote']['USD']['percent_change_24h']) 
             percent_change_7d = str(data[symbol]['quote']['USD']['percent_change_7d'])
