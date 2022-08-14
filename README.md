@@ -59,7 +59,7 @@ Python, Heroku
 ```
 3. Get all the latest news about a cryptocurrency
 ```
-/get_news_of <cryptocurrency>
+/get_news_of <ticker>
 ```
 ## Deployment using Heroku
 This telegram bot is deployed on heroku using the ```Procfile``` which is in the repository 
