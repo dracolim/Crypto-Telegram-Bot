@@ -69,6 +69,17 @@ def get_info_ticker(update: Update,
     
     update.message.reply_text(message)
 
+#get information by name
+def get_info_name(update: Update,
+    context: CallbackContext,
+    name: str = None,
+) -> None:
+    name = update.message.text.split('/get_info_name')[1].strip()
+
+    message = CMC(API_KEY).getInfoName(name)
+    
+    update.message.reply_text(message)
+
 
 # To get the price of the coin by SYMBOL
 def get_price_by_ticker(
@@ -225,8 +236,7 @@ def main() -> None:
     dispatcher.add_handler(CommandHandler('start', start))
 
     dispatcher.add_handler(CommandHandler("get_info_ticker", get_info_ticker))
-    # dispatcher.add_handler(CommandHandler(
-    #     "get_info_name", get_info_name))
+    dispatcher.add_handler(CommandHandler("get_info_name", get_info_name))
 
     dispatcher.add_handler(CommandHandler("get_price_by_ticker", get_price_by_ticker))
     dispatcher.add_handler(CommandHandler("get_price_by_name", get_price_by_name))

@@ -123,6 +123,9 @@ class CMC:
             r = self.session.get(url, params=parameters)
             data = r.json()['data']
 
+            #name 
+            name = data[symbol]['name']
+
             #rank
             rank = data[symbol]['cmc_rank']
 
@@ -131,7 +134,8 @@ class CMC:
 
             #volume
             volume_24h =  str(round(data[symbol]['quote']['USD']['volume_24h'],2))
-            message = f"Information on {symbol}: \n" + \
+
+            message = f"Information on {name} ({symbol}): \n" + \
             f"⭐ Rank: {rank} \n" + f"💲 Price: ${price} USD \n\n"  + "🗂 Volume \n" + \
             f"Volume last 24hrs: {volume_24h} \n" 
 
@@ -180,11 +184,29 @@ class CMC:
             
             return message
 
-            #all_names = self.getAllNames()
+        # get information by name
+    def getInfoName(self, name):
+        all_name = self.getAllNames()
+        all_coins = self.getAllCoins()
+        if name == '':
+            return 'Enter a cryptocurrency name (/get_info_name Bitcoin)'
+        else:
+            first_letter = name[0].upper()
+            name2 = first_letter + name[1:].lower()
+            if name2 not in all_name:
+                return 'There is no such cryptocurrency'
+            else:
+                for each in all_coins:
+                    if name2 == each['name']:
+                        symbol = each['symbol']
+                        message = self.getInfoTicker(symbol)
+        return message
+                
+
 
 
 
 # creating cmc object
 cmc = CMC(API_KEY)
 
-pp(cmc.getInfoTicker('btc'))
+#pp(cmc.getInfoName('bitCoin'))
