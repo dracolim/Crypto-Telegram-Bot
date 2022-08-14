@@ -68,4 +68,4 @@ This telegram bot is deployed on heroku using the ```Procfile``` which is in the
 
 ## What's next for this bot
 1. Linking it to a database so that it allows users to build their personal portfolio
-2. Adding machine learning, creating OHLC graphs can send it to the telegram bot as an image
+2. Adding machine learning, creating OHLC graphs that can be send as an image through the telegram bot
