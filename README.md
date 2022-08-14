@@ -29,6 +29,8 @@ Python, Heroku
 ```
 /get_price_by_ticker <ticker>
 ```
+<img width="253" alt="Screenshot 2022-08-15 at 1 52 38 AM" src="https://user-images.githubusercontent.com/85498185/184548887-c0be9317-43db-4d13-813d-336034c64a51.png">
+
 2. Get crypto price by name (in USD)
 ```
 /get_price_by_name <name>
