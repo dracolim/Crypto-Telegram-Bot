@@ -5,7 +5,6 @@ from sqlite3 import paramstyle
 from tokenize import PlainToken
 import requests
 from requests import Session
-import telebot.secret as secret
 from pprint import pp
 
 from requests.exceptions import HTTPError
@@ -17,6 +16,7 @@ from matplotlib import pyplot as plt
 
 #from mpl_finance import candlestick_ohlc
 import mplfinance as mpf
+import matplotlib 
 import matplotlib.dates as mpl_dates
 import matplotlib.ticker as tkr
 import seaborn as sns
@@ -24,6 +24,7 @@ from PIL import Image
 import numpy as np
 import math
 
+print(matplotlib.__version__)
 
 # Set some standard parameters upfront
 pd.options.display.float_format = '{:.1f}'.format

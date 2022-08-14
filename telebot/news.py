@@ -1,17 +1,13 @@
 import os
 from datetime import date, datetime
-import datetime as date
 from sqlite3 import paramstyle
-from urllib.request import Request
 import requests
-from requests import Session
 from pprint import pp
 
 # date
 today = datetime.now()
 DATE = today.strftime("%Y-%m-%d")
 
-print(requests.__version__)
 
 def getNewsBySymbol(symbol):
     news_list = []
