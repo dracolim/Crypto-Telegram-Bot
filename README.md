@@ -40,6 +40,8 @@ Python, Heroku
 ```
  /top_10_cryptocurrency
  ```
+ <img width="360" alt="Screenshot 2022-08-15 at 1 51 16 AM" src="https://user-images.githubusercontent.com/85498185/184548859-818f59bc-bd10-451d-ac39-573f66294828.png">
+
 <ins> 📰Updated News </ins>
 1. Get all the latest news from different sources
 ```
