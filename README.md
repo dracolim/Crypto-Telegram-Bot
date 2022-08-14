@@ -1,1 +1,1 @@
-# know-your-crypto-telegram-bot
+# Crypto-Telegram-Bot
