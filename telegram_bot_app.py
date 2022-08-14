@@ -34,7 +34,7 @@ VERB = ["rose", "fell"]
 COLOUR = ["🔴", "🟢"]
 UPDATED = 0
 
-TOKEN = os.getenv(bot_token)
+TOKEN = bot_token
 
 # date
 today = date.today()
@@ -231,7 +231,10 @@ def main() -> None:
 
 
     # start the bot
-    updater.start_polling()
+    updater.start_webhook(listen="0.0.0.0",
+                        port=int(PORT),
+                        url_path=TOKEN)
+    updater.bot.setWebhook('https://know-your-crypto-telegram-bot.herokuapp.com/' + TOKEN)
 
     # block until the user proesses ctrl-c or the process receives SIGTINT,
     updater.idle()
