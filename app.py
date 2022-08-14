@@ -229,9 +229,9 @@ def main() -> None:
     # start the bot
     updater.start_webhook(listen="0.0.0.0",
                         port=int(PORT),
-                        url_path=TOKEN)
-    updater.bot.setWebhook(
-        'https://know-your-crypto-telegram-bot.herokuapp.com/' + TOKEN)
+                        url_path=TOKEN,
+                        webhook_url="https://know-your-crypto-telegram-bot.herokuapp.com/" + TOKEN)
+                        
     #updater.start_polling()
 
     # block until the user proesses ctrl-c or the process receives SIGTINT,
