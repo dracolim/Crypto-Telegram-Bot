@@ -1,9 +1,9 @@
 # Crypto-Telegram-Bot
 <strong>APIs used:</strong> <br/>
 <ins> To get Price and trending cryptocurrencies </ins>
-1. Coin Market Cap - https://coinmarketcap.com/api/documentation
+1.Coin Market Cap - https://coinmarketcap.com/api/documentation
 <br/>
-<ins> To get exchange rate </ins> 
+<ins> To get exchange rate </ins> <br/>
 2. Fixer - https://apilayer.com/marketplace/fixer-api
 <br/>
 <ins> To get news </ins> <br/>
