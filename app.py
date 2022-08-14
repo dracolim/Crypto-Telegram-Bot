@@ -182,7 +182,7 @@ def get_today_news(update: Update, context: CallbackContext) -> None:
             link = each_news['link']
             source = each_news['source']
 
-            combine = f'⚫ Title: {title} \n🔗 LIink: {link} \nℹ️ Source: {source} \n\n'
+            combine = f'⚫ Title: {title} \n🔗 Link: {link} \nℹ️ Source: {source} \n\n'
             message += combine
 
     update.message.reply_text(message)
@@ -203,7 +203,7 @@ def get_news_by_symbol(update: Update, context: CallbackContext, symbol: str = N
                 title = each_news['title']
                 link = each_news['link']
                 description = each_news['description']
-                combine = f'⚫ Title: {title} \n📄 Description: {description} \n🔗 LIink: {link} \n\n'
+                combine = f'⚫ Title: {title} \n📄 Description: {description} \n🔗 Link: {link} \n\n'
                 message += combine
 
     update.message.reply_text(message)
