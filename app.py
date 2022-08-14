@@ -45,13 +45,13 @@ def start(update: Update, context: CallbackContext) -> None:
         f'How may I be of service today ({DATE})? \n'
 
     commands = "\n📝 Commands \n" + "/start - get commands \n" 
-    information = "\nℹ️ Information \n" + "/get_info_ticker TICKER: Get information by crypto symbol \n" + "/get_info_name name: Get information by crypto name \n"
-    price = "\n💲 Price \n" + "/get_price_by_ticker TICKER: Get crypto price by symbol (in USD) \n" + "/get_price_by_name NAME: Get crypto price by name (in USD) \n" + \
-        "/convert_exchange_rate PRICE CURRENCY: Convert price from USD to other currencies \n"
+    information = "\nℹ️ Information \n" + "/get_info_ticker <ticker>: Get information by crypto symbol \n" + "/get_info_name <name>: Get information by crypto name \n"
+    price = "\n💲 Price \n" + "/get_price_by_ticker <ticker>: Get crypto price by symbol (in USD) \n" + "/get_price_by_name <name>: Get crypto price by name (in USD) \n" + \
+        "/convert_exchange_rate <price> <currency>: Convert price from USD to other currencies \n"
     top_10_command = f'\n💹 Trending \n /top_10_cryptocurrency: Top 10 cryptocurrency today \n'
     news = f'\n📰Updated News as of {DATE} \n/get_news: Get all the news from different sources \n' + \
         f"/get_news_cointelegraph: Get all the news from cointelegraph \n" + \
-        f"/get_news_of CRYPTO: Get all the news about a cryptocurrency \n"
+        f"/get_news_of <cryptocurrency>: Get all the news about a cryptocurrency \n"
 
     reply_text += commands + information + price + top_10_command + news
 
