@@ -188,4 +188,4 @@ class CMC:
 # creating cmc object
 cmc = CMC(API_KEY)
 
-pp(cmc.getInfoTicker('btc'))
+#pp(cmc.getInfoTicker('btc'))
