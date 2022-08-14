@@ -11,6 +11,7 @@ Python, Heroku
 3. Find the list of helper commands by entering ```/start```
 
 ## Commands
+<img width="410" alt="Screenshot 2022-08-15 at 1 47 14 AM" src="https://user-images.githubusercontent.com/85498185/184548714-140f4c8d-d9b6-4933-8a66-6c7c12529cec.png">
 <ins> ℹ️ Information </ins>
 1. Get information about the cryptocurrency by symbol
 ```
