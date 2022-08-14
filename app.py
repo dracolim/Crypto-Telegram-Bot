@@ -47,7 +47,7 @@ def start(update: Update, context: CallbackContext) -> None:
     commands = "\n📝 Commands \n" + "/start - get commands \n" 
     information = "\nℹ️ Information \n" + "/get_info_ticker <ticker>: Get information by crypto symbol \n" + "/get_info_name <name>: Get information by crypto name \n"
     price = "\n💲 Price \n" + "/get_price_by_ticker <ticker>: Get crypto price by symbol (in USD) \n" + "/get_price_by_name <name>: Get crypto price by name (in USD) \n" + \
-        "/convert_exchange_rate <price> <currency>: Convert price from USD to other currencies \n"
+        "/convert_exchange_rate <price> <currency code>: Convert price from USD to other currencies \n"
     top_10_command = f'\n💹 Trending \n /top_10_cryptocurrency: Top 10 cryptocurrency today \n'
     news = f'\n📰Updated News as of {DATE} \n/get_news: Get all the news from different sources \n' + \
         f"/get_news_cointelegraph: Get all the news from cointelegraph \n" + \
