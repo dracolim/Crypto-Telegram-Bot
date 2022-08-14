@@ -56,6 +56,18 @@ def start(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(reply_text)
 
 
+#get information by ticker
+def get_info_ticker(update: Update,
+    context: CallbackContext,
+    symbol: str = None,
+) -> None:
+    symbol = update.message.text.split('/get_info_ticker')[1].strip()
+
+    message = CMC(API_KEY).getPriceByTicker(symbol)
+    update.message.reply_text(message)
+
+
+
 # To get the price of the coin by SYMBOL
 def get_price_by_ticker(
     update: Update,
@@ -211,6 +223,11 @@ def main() -> None:
     dispatcher.add_handler(CommandHandler('start', start))
 
     dispatcher.add_handler(CommandHandler(
+        "/get_info_ticker", get_info_ticker))
+    # dispatcher.add_handler(CommandHandler(
+    #     "/get_info_name", get_info_name))
+
+    dispatcher.add_handler(CommandHandler(
         "get_price_by_ticker", get_price_by_ticker))
     dispatcher.add_handler(CommandHandler(
         "get_price_by_name", get_price_by_name))
@@ -231,7 +248,7 @@ def main() -> None:
                         port=int(PORT),
                         url_path=TOKEN,
                         webhook_url="https://know-your-crypto-telegram-bot.herokuapp.com/" + TOKEN)
-                        
+
     #updater.start_polling()
 
     # block until the user proesses ctrl-c or the process receives SIGTINT,

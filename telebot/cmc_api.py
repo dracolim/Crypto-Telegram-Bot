@@ -2,7 +2,7 @@ import os
 import datetime as date
 from sqlite3 import paramstyle
 from requests import Session
-import telebot.secret as secret
+from secret import API_KEY
 from pprint import pp
 
 # pprint => pp(r.json())
@@ -106,8 +106,86 @@ class CMC:
 
         return top_10_string
 
+    
+    # get information by symbol
+    def getInfoTicker(self, symbol):
+        symbol = symbol.upper()
+        all_symbols = self.getAllSymbols()
+
+        if symbol == '':
+            return 'Enter a cryptocurrency ticker (/get_info_ticker BTC)'
+        elif symbol not in all_symbols:
+            return 'There is no such cryptocurrency 😔'
+        else:
+            url = self.apiurl + '/v1/cryptocurrency/quotes/latest'
+            parameters = {
+                'symbol': symbol
+            }
+            r = self.session.get(url, params=parameters)
+            data = r.json()['data']
+
+            #rank
+            rank = data[symbol]['cmc_rank']
+
+            #price
+            price = str(round(data[symbol]['quote']['USD']['price'] , 2)) 
+
+            #volume
+            volume_24h =  data[symbol]['quote']['USD']['volume_24h']
+            message = f"📊 Information on {symbol}: \n" + \
+            f"⭐ Rank: {rank} \n" + f"💲 Price: {price} \n\n"  + "🗂 Volume \n" + \
+            f"Volume last 24hrs: {volume_24h} \n" 
+
+            volume_change_24h = str(data[symbol]['quote']['USD']['volume_change_24h'])
+            if volume_change_24h[0] == '-':
+                message += f"Volume change last 24 hrs: 🔻 {volume_change_24h} \n\n"
+            else:
+                message += f"Volume change last 24 hrs: 🔺 {volume_change_24h} \n\n"
+            
+            #percent change
+            message += "📈 📉 Percentage change"
+            percent_change_1h = str(data[symbol]['quote']['USD']['percent_change_1h'])
+            percent_change_24h = str(data[symbol]['quote']['USD']['percent_change_24h']) 
+            percent_change_7d = str(data[symbol]['quote']['USD']['percent_change_7d'])
+            percent_change_30d = str(data[symbol]['quote']['USD']['percent_change_30d'])
+
+            if percent_change_1h[0] == '-':
+                message += f"Percent change last 1hr: 📉 {percent_change_1h} \n" 
+            else:
+                message += f"Percent change last 1hr: 📈 {percent_change_1h} \n"
+            
+            if percent_change_24h[0] == '-':
+                message += f"Percent change last 24hr: 📉 {percent_change_24h} \n" 
+            else:
+                message += f"Percent change last 24hr: 📈 {percent_change_24h} \n"
+
+            if percent_change_7d[0] == '-':
+                message += f"Percent change last 7d: 📉 {percent_change_7d} \n" 
+            else:
+                message += f"Percent change last 7d: 📈 {percent_change_7d} \n"
+
+            if percent_change_30d[0] == '-':
+                message += f"Percent change last 30d: 📉 {percent_change_30d} \n" 
+            else:
+                message += f"Percent change last 30d: 📈 {percent_change_30d} \n\n"
+
+            #supply
+            message += "🌱 Supply \n"
+            circulating_supply = data[symbol]['circulating_supply']
+            total_supply = data[symbol]['total_supply']
+            max_supply = data[symbol]['max_supply']
+
+            message += f"Circulating supply: {circulating_supply} \n" + \
+                f"Total suply: {total_supply} \n" + \
+                    f"Max supply: {max_supply} \n"
+            
+            return message
+
+            #all_names = self.getAllNames()
+
+
 
 # creating cmc object
-cmc = CMC(secret.API_KEY)
+cmc = CMC(API_KEY)
 
-# pp(cmc.getPriceByID('bitCoin'))
+pp(cmc.getInfoTicker('btc'))
