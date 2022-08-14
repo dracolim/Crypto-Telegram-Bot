@@ -220,7 +220,7 @@ def main() -> None:
 
     dispatcher.add_handler(CommandHandler(
         "top_10_cryptocurrency", get_top_ten))
-    dispatcher.add_handler(CommandHandler("OHLC_graph", send_photo))
+    #dispatcher.add_handler(CommandHandler("OHLC_graph", send_photo))
 
     dispatcher.add_handler(CommandHandler("get_news", get_today_news))
     dispatcher.add_handler(CommandHandler("get_news_of", get_news_by_symbol))
