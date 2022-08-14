@@ -2,7 +2,7 @@ import os
 import datetime as date
 from sqlite3 import paramstyle
 from requests import Session
-from secret import API_KEY
+from telebot.secret import API_KEY
 from pprint import pp
 
 # pprint => pp(r.json())
