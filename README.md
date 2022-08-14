@@ -67,5 +67,5 @@ This telegram bot is deployed on heroku using the ```Procfile``` which is in the
 5. crypto-news14 - https://rapidapi.com/enayfls-ibksP3yFoax/api/crypto-news14/ <br/>
 
 ## What's next for this bot
-1. Linking it to a database so that it allows users to build their personal portfolio
+1. Linking it to a database so that users can build their very own personal portfolio
 2. Adding machine learning, creating OHLC graphs that can be send as an image through the telegram bot
