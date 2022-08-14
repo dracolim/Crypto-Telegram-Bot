@@ -126,7 +126,7 @@ def convert_exchange_rate(update: Update, context: CallbackContext, price: int =
     message = ""
     # scenario 1: did not include price and currency
     if len(update.message.text.split()) == 1:
-        message = 'Enter a price and currency and inlcude spacing (/convert_exchange_rate 128 SGD)'
+        message = 'Enter a price and currency and include spacing (/convert_exchange_rate 128 SGD)'
     # scenario 2: only price, no currency
     elif len(update.message.text.split()) == 2 and update.message.text.split()[1].isdigit():
         message = 'Enter a currency (/convert_exchange_rate 128 SGD)'
