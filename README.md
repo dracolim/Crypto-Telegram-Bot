@@ -1,5 +1,5 @@
 # Crypto-Telegram-Bot
-APIs used:
+APIs used: <br/>
 <u> To get Price and trending cryptocurrencies </u>
 1. Coin Market Cap - https://coinmarketcap.com/api/documentation
 
