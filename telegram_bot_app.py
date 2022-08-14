@@ -21,11 +21,11 @@ import mplfinance as mpf
 import _thread
 
 # import all the functions from other .py files
-from cmc_api import CMC
-from coinbase import getOHLCgraph
-from exchange_rate import getExchangeRate
-from news import getNewsBySymbol, getTodayNews , getNewsFromCointelegraph
-from secret import API_KEY, bot_token
+from telebot.cmc_api import CMC
+from telebot.coinbase import getOHLCgraph
+from telebot.exchange_rate import getExchangeRate
+from telebot.news import getNewsBySymbol, getTodayNews, getNewsFromCointelegraph
+from telebot.secret import API_KEY, bot_token
 
 print('Bot started...')
 
@@ -51,7 +51,7 @@ def start(update: Update, context: CallbackContext) -> None:
     top_10_command = f'\n💹 Trending \n /top_10_cryptocurrency: Top 10 cryptocurrency today \n'
     news = f'\n📰Updated News as of {DATE} \n/get_news: Get all the news from different sources \n' + \
         f"/get_news_cointelegraph: Get all the news from cointelegraph \n" + \
-            f"/get_news_of CRYPTO: Get all the news about a cryptocurrency \n"
+        f"/get_news_of CRYPTO: Get all the news about a cryptocurrency \n"
 
     reply_text += commands + price + top_10_command + news
 
@@ -77,7 +77,6 @@ def get_price_by_ticker(
     update.message.reply_text(message)
 
 
-
 # To get the price of the coin by NAME
 def get_price_by_name(
     update: Update,
@@ -97,7 +96,6 @@ def get_price_by_name(
         message = f"{name2} changed by {result}!"
 
     update.message.reply_text(message)
-
 
 
 # To convert USD to other currency
@@ -135,7 +133,6 @@ def get_top_ten(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(message)
 
 
-
 # To get OHLC graph"
 def send_photo(update: Update, context: CallbackContext) -> None:
     df_ohlc = getOHLCgraph()
@@ -148,7 +145,6 @@ def send_photo(update: Update, context: CallbackContext) -> None:
     print(df_ohlc)
 
     update.message.reply_photo(plot_file)
-
 
 
 # To get TODAY news
@@ -189,6 +185,7 @@ def get_news_by_symbol(update: Update, context: CallbackContext, symbol: str = N
 
     update.message.reply_text(message)
 
+
 def get_news_cointelegraph(update: Update, context: CallbackContext) -> None:
     news_list = getNewsFromCointelegraph()
     if len(news_list) == 0:
@@ -222,19 +219,22 @@ def main() -> None:
     dispatcher.add_handler(CommandHandler(
         "convert_exchange_rate", convert_exchange_rate))
 
-    dispatcher.add_handler(CommandHandler("top_10_cryptocurrency", get_top_ten))
+    dispatcher.add_handler(CommandHandler(
+        "top_10_cryptocurrency", get_top_ten))
     dispatcher.add_handler(CommandHandler("OHLC_graph", send_photo))
 
     dispatcher.add_handler(CommandHandler("get_news", get_today_news))
     dispatcher.add_handler(CommandHandler("get_news_of", get_news_by_symbol))
-    dispatcher.add_handler(CommandHandler("get_news_cointelegraph", get_news_cointelegraph))
-
+    dispatcher.add_handler(CommandHandler(
+        "get_news_cointelegraph", get_news_cointelegraph))
 
     # start the bot
     updater.start_webhook(listen="0.0.0.0",
-                        port=int(PORT),
-                        url_path=TOKEN)
-    updater.bot.setWebhook('https://know-your-crypto-telegram-bot.herokuapp.com/' + TOKEN)
+                          port=int(PORT),
+                          url_path=TOKEN)
+    updater.bot.setWebhook(
+        'https://know-your-crypto-telegram-bot.herokuapp.com/' + TOKEN)
+    #updater.start_polling()
 
     # block until the user proesses ctrl-c or the process receives SIGTINT,
     updater.idle()

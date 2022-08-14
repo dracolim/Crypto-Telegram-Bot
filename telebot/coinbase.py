@@ -5,7 +5,7 @@ from sqlite3 import paramstyle
 from tokenize import PlainToken
 import requests
 from requests import Session
-import secret
+import telebot.secret as secret
 from pprint import pp
 
 from requests.exceptions import HTTPError
