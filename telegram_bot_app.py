@@ -27,7 +27,7 @@ from telebot.secret import API_KEY, bot_token
 
 print('Bot started...')
 
-PORT = int(os.environ.get("PORT", 5000))
+PORT = int(os.environ.get("PORT", 8443))
 VERB = ["rose", "fell"]
 COLOUR = ["🔴", "🟢"]
 UPDATED = 0
