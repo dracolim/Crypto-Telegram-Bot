@@ -222,17 +222,13 @@ def main() -> None:
     # add handlers here
     dispatcher.add_handler(CommandHandler('start', start))
 
-    dispatcher.add_handler(CommandHandler(
-        "/get_info_ticker", get_info_ticker))
+    dispatcher.add_handler(CommandHandler("/get_info_ticker", get_info_ticker))
     # dispatcher.add_handler(CommandHandler(
     #     "/get_info_name", get_info_name))
 
-    dispatcher.add_handler(CommandHandler(
-        "get_price_by_ticker", get_price_by_ticker))
-    dispatcher.add_handler(CommandHandler(
-        "get_price_by_name", get_price_by_name))
-    dispatcher.add_handler(CommandHandler(
-        "convert_exchange_rate", convert_exchange_rate))
+    dispatcher.add_handler(CommandHandler("get_price_by_ticker", get_price_by_ticker))
+    dispatcher.add_handler(CommandHandler("get_price_by_name", get_price_by_name))
+    dispatcher.add_handler(CommandHandler("convert_exchange_rate", convert_exchange_rate))
 
     dispatcher.add_handler(CommandHandler(
         "top_10_cryptocurrency", get_top_ten))
