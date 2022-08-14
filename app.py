@@ -77,7 +77,7 @@ def get_price_by_ticker(
 
     symbol = update.message.text.split('/get_price_by_ticker')[1].strip()
 
-    result = CMC(API_KEY).getPriceByTicker(symbol)
+    result = CMC(API_KEY).getInfoTicker(symbol)
     # check if result is valid:
     if 'USD' not in result:
         message = result
