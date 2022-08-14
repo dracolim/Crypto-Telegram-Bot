@@ -21,7 +21,6 @@ import _thread
 
 # import all the functions from other .py files
 from telebot.cmc_api import CMC
-from telebot.coinbase import getOHLCgraph
 from telebot.exchange_rate import getExchangeRate
 from telebot.news import getNewsBySymbol, getTodayNews, getNewsFromCointelegraph
 from telebot.secret import API_KEY, bot_token
