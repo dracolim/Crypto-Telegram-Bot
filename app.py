@@ -95,7 +95,7 @@ def get_price_by_ticker(
     if 'USD' not in result:
         message = result
     else:
-        message = f"{symbol.upper()} changed by {result}!"
+        message = f"{symbol.upper()} priced at ${result}!"
 
     update.message.reply_text(message)
 
@@ -116,7 +116,7 @@ def get_price_by_name(
     else:
         first_letter = name[0].upper()
         name2 = first_letter + name[1:].lower()
-        message = f"{name2} changed by {result}!"
+        message = f"{name2} priced at ${result}!"
 
     update.message.reply_text(message)
 
