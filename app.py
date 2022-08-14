@@ -27,7 +27,7 @@ from telebot.secret import API_KEY, bot_token
 
 print('Bot started...')
 
-PORT = int(os.environ.get("PORT", 8443))
+PORT = int(os.environ.get("PORT", 5000))
 VERB = ["rose", "fell"]
 COLOUR = ["🔴", "🟢"]
 UPDATED = 0
@@ -236,7 +236,6 @@ def main() -> None:
 
     # block until the user proesses ctrl-c or the process receives SIGTINT,
     updater.idle()
-
 
 if __name__ == '__main__':
     main()
