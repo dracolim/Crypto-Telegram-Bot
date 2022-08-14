@@ -8,7 +8,7 @@ Python, Heroku
 ## Usage
 1. Downlaod the <a href = 'https://telegram.org/'>Telegram</a> app
 2. Search for the bot called <strong> know-your-crypto </strong> (@know_your_crypto_bot) or use the this <a href = 'https://t.me/know_your_crypto_bot'>Link</a>
-3. Find the list of helper commands by entering /start
+3. Find the list of helper commands by entering ```/start```
 
 ## Commands
 <ins> ℹ️ Information </ins>
