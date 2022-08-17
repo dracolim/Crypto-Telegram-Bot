@@ -51,13 +51,15 @@ Python, Heroku
 ```
 /get_news
 ```
+<img width="418" alt="Screenshot 2022-08-15 at 1 57 34 AM" src="https://user-images.githubusercontent.com/85498185/184549012-a3e8c09c-57c6-408f-aaba-6fe45aba9e11.png">
+
 2. Get all the latest news from cointelegraph 
 ```
 /get_news_cointelegraph
 ```
 3. Get all the latest news about a cryptocurrency
 ```
-/get_news_of <cryptocurrency>
+/get_news_of <ticker>
 ```
 ## Deployment using Heroku
 This telegram bot is deployed on heroku using the ```Procfile``` which is in the repository 
