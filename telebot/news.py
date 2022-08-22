@@ -32,7 +32,7 @@ def getNewsBySymbol(symbol):
         return news_list[:5]
 
 
-#pp(getNewsBySymbol('eth'))
+# pp(getNewsBySymbol('eth'))
 
 
 def getTodayNews():
@@ -59,7 +59,7 @@ def getTodayNews():
 
 def getNewsFromCointelegraph():
     news_list = []
-    
+
     url = "https://crypto-news14.p.rapidapi.com/news/cointelegraph"
     headers = {
         "X-RapidAPI-Key": "608526d4bcmshba1018c85d9956bp13fedfjsn04bbfe9692f4",
@@ -74,6 +74,6 @@ def getNewsFromCointelegraph():
         if date == DATE:
             news_list.append(each_news)
 
-    return news_list
+    return news_list[:5]
 
-#pp(getNewsFromCointelegraph())
+# pp(getNewsFromCointelegraph())
