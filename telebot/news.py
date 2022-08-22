@@ -52,7 +52,7 @@ def getTodayNews():
         if date == DATE:
             news_list.append(each_news)
 
-    return news_list
+    return news_list[:5]
 
 
 # pp(get_today_news())
@@ -71,9 +71,9 @@ def getNewsFromCointelegraph():
     for each_news in data:
         pubdate = each_news['date'][5:16]
         date = datetime.strptime(pubdate, "%d %b %Y").strftime('%Y-%m-%d')
-        if date == DATE:
+        if date == '2022-08-22':
             news_list.append(each_news)
 
     return news_list[:5]
 
-# pp(getNewsFromCointelegraph())
+pp(getNewsFromCointelegraph())
