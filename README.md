@@ -67,7 +67,10 @@ This telegram bot is deployed on heroku using the ```Procfile``` which is in the
 
 ## APIs used
 <ins> To get Price and trending cryptocurrencies </ins><br/>
-1.Coin Market Cap - https://coinmarketcap.com/api/documentation
+| Description | Documentation |
+| --- | --- |
+| Coin Market Cap | [List all new or modified files](https://coinmarketcap.com/api/documentation) |
+
 <br/>
 <ins> To get exchange rate </ins> <br/>
 2. Fixer - https://apilayer.com/marketplace/fixer-api
