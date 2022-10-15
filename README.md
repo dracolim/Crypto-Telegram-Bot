@@ -82,10 +82,12 @@ This telegram bot is deployed on heroku using the ```Procfile``` which is in the
 
 
 <br/>
-<ins> To get news </ins> <br/>
+
+<ins> To get News </ins> <br/>
 | Description | Documentation |
 | --- | --- |
 | Fixer | https://apilayer.com/marketplace/fixer-api |
+
 
 
 ## What's next for this bot
