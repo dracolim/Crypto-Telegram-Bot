@@ -17,6 +17,7 @@ Python, Heroku
 <img width="410" alt="Screenshot 2022-08-15 at 1 47 14 AM" src="https://user-images.githubusercontent.com/85498185/184548714-140f4c8d-d9b6-4933-8a66-6c7c12529cec.png">
 
 <ins> ℹ️ Information </ins>
+</br>
 <img width="306" alt="Screenshot 2022-08-15 at 1 51 49 AM" src="https://user-images.githubusercontent.com/85498185/184548874-52c60e7a-3d2e-480e-975d-07b31e8bed3a.png">
 | Action  | Command | 
 | ------ | ------- | 
@@ -24,6 +25,7 @@ Python, Heroku
 | Get information about the cryptocurrency by name | `/get_info_name <name>` | 
 
 <ins> 💲 Price </ins>
+</br>
 <img width="253" alt="Screenshot 2022-08-15 at 1 52 38 AM" src="https://user-images.githubusercontent.com/85498185/184548887-c0be9317-43db-4d13-813d-336034c64a51.png">
 |Action  | Command |
 | ------ | ------- | 
@@ -32,12 +34,14 @@ Python, Heroku
 | Convert amount from USD to other currencies | `/convert_exchange_rate <price> <currency code>` |
 
 <ins> 💹 Trending </ins>
+</br>
 <img width="360" alt="Screenshot 2022-08-15 at 1 51 16 AM" src="https://user-images.githubusercontent.com/85498185/184548859-818f59bc-bd10-451d-ac39-573f66294828.png">
 |Action  | Command | 
 | ------ | ------- | 
 | Get top 10 cryptocurrncy as of today | `/top_10_cryptocurrency` |
 
 <ins> 📰 Updated News </ins>
+</br>
 <img width="418" alt="Screenshot 2022-08-15 at 1 57 34 AM" src="https://user-images.githubusercontent.com/85498185/184549012-a3e8c09c-57c6-408f-aaba-6fe45aba9e11.png">
 |Action  | Command | 
 | ------ | ------- | 
