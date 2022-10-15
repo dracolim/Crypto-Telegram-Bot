@@ -85,7 +85,7 @@ This telegram bot is deployed on heroku using the ```Procfile``` which is in the
 <ins> To get news </ins> <br/>
 | Description | Documentation |
 | --- | --- |
-| mboum-finance | https://rapidapi.com/sparior/api/mboum-finance/ |
+| mboum-finance| https://rapidapi.com/sparior/api/mboum-finance/ |
 | crypto-news-live3 | https://rapidapi.com/ddeshon/api/crypto-news-live3/ |
 | crypto-news14 | https://rapidapi.com/enayfls-ibksP3yFoax/api/crypto-news14/ |
 
