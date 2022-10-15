@@ -22,6 +22,7 @@ Python, Heroku
 | Get information about the cryptocurrency by symbol  | `/get_info_ticker <ticker>` |
 | Get information about the cryptocurrency by name | `/get_info_name <name>` | 
 <img width="306" alt="Screenshot 2022-08-15 at 1 51 49 AM" src="https://user-images.githubusercontent.com/85498185/184548874-52c60e7a-3d2e-480e-975d-07b31e8bed3a.png">
+</br>
 
 <ins> **💲 Price** </ins>
 |Action  | Command |
@@ -30,12 +31,14 @@ Python, Heroku
 | Get crypto price by name (in USD) | `/get_price_by_name <name>` | 
 | Convert amount from USD to other currencies | `/convert_exchange_rate <price> <currency code>` |
 <img width="253" alt="Screenshot 2022-08-15 at 1 52 38 AM" src="https://user-images.githubusercontent.com/85498185/184548887-c0be9317-43db-4d13-813d-336034c64a51.png">
+</br>
 
 <ins> **💹 Trending** </ins>
 |Action  | Command | 
 | ------ | ------- | 
 | Get top 10 cryptocurrncy as of today | `/top_10_cryptocurrency` |
 <img width="360" alt="Screenshot 2022-08-15 at 1 51 16 AM" src="https://user-images.githubusercontent.com/85498185/184548859-818f59bc-bd10-451d-ac39-573f66294828.png">
+</br>
 
 <ins> **📰 Updated News** </ins>
 |Action  | Command | 
@@ -44,6 +47,7 @@ Python, Heroku
 | Get all the latest news from cointelegraph | `/get_news_cointelegraph` |
 | Get all the latest news about a cryptocurrency | `/get_news_of <ticker>` |
 <img width="418" alt="Screenshot 2022-08-15 at 1 57 34 AM" src="https://user-images.githubusercontent.com/85498185/184549012-a3e8c09c-57c6-408f-aaba-6fe45aba9e11.png">
+</br>
 
 ## Deployment using Heroku
 This telegram bot is deployed on heroku using the ```Procfile``` which is in the repository 
