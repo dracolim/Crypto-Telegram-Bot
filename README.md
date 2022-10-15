@@ -1,7 +1,7 @@
 # Crypto-Telegram-Bot
 ## Description
 Crypto-Telegram-Bot allows you to get crypto updates such as news, price, supply , volume and percentage change. 
-
+![example workflow](https://img.shields.io/badge/Build%20in-Python-blue)
 
 ## Tech Stack
 Python, Heroku 
