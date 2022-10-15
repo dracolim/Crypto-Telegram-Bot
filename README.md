@@ -33,7 +33,8 @@ Python, Heroku
 | Get crypto price by name (in USD) | `/get_price_by_name <name>` | 
 | Convert amount from USD to other currencies | `/convert_exchange_rate <price> <currency code>` |
 
-<ins> 💹 Trending </ins>
+<ins> **💹 Trending** </ins>
+</br>
 </br>
 <img width="360" alt="Screenshot 2022-08-15 at 1 51 16 AM" src="https://user-images.githubusercontent.com/85498185/184548859-818f59bc-bd10-451d-ac39-573f66294828.png">
 |Action  | Command | 
