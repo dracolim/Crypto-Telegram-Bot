@@ -77,7 +77,10 @@ This telegram bot is deployed on heroku using the ```Procfile``` which is in the
 <br/>
 
 <ins> To get exchange rate </ins> <br/>
-https://apilayer.com/marketplace/fixer-api 
+| Description | Documentation |
+| --- | --- |
+| Fixer | https://apilayer.com/marketplace/fixer-api |
+
 
 <br/>
 <ins> To get news </ins> <br/>
