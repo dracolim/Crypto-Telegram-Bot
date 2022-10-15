@@ -69,7 +69,6 @@ This telegram bot is deployed on heroku using the ```Procfile``` which is in the
 
 ## APIs used
 <ins> To get Price and trending cryptocurrencies </ins><br/>
-1.Coin Market Cap - https://coinmarketcap.com/api/documentation
 | Description | Documentation |
 | --- | --- |
 | Coin Market Cap | https://coinmarketcap.com/api/documentation |
@@ -84,9 +83,11 @@ This telegram bot is deployed on heroku using the ```Procfile``` which is in the
 
 <br/>
 <ins> To get news </ins> <br/>
-3. mboum-finance - https://rapidapi.com/sparior/api/mboum-finance/ <br/>
-4. crypto-news-live3 - https://rapidapi.com/ddeshon/api/crypto-news-live3/ <br/>
-5. crypto-news14 - https://rapidapi.com/enayfls-ibksP3yFoax/api/crypto-news14/ <br/>
+| Description | Documentation |
+| --- | --- |
+| mboum-finance | https://rapidapi.com/sparior/api/mboum-finance/ |
+| crypto-news-live3 | https://rapidapi.com/ddeshon/api/crypto-news-live3/ |
+| crypto-news14 | https://rapidapi.com/enayfls-ibksP3yFoax/api/crypto-news14/ |
 
 ## What's next for this bot
 1. Linking it to a database so that users can build their very own personal portfolio
