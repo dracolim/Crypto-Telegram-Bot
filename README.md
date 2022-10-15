@@ -1,6 +1,8 @@
 # Crypto-Telegram-Bot
 ## Description
 Crypto-Telegram-Bot allows you to get crypto updates such as news, price, supply , volume and percentage change. 
+<br>
+<br>
 ![example workflow](https://img.shields.io/badge/Build%20in-Python-blue)
 
 ## Tech Stack
@@ -73,10 +75,9 @@ This telegram bot is deployed on heroku using the ```Procfile``` which is in the
 | Coin Market Cap | https://coinmarketcap.com/api/documentation |
 
 <br/>
+
 <ins> To get exchange rate </ins> <br/>
-| Description | Documentation |
-| --- | --- |
-| Fixer | https://apilayer.com/marketplace/fixer-api |
+https://apilayer.com/marketplace/fixer-api 
 
 <br/>
 <ins> To get news </ins> <br/>
