@@ -16,15 +16,15 @@ Python, Heroku
 ## Commands
 <img width="410" alt="Screenshot 2022-08-15 at 1 47 14 AM" src="https://user-images.githubusercontent.com/85498185/184548714-140f4c8d-d9b6-4933-8a66-6c7c12529cec.png">
 
-<ins> ℹ️ Information </ins>
-</br>
-<img width="306" alt="Screenshot 2022-08-15 at 1 51 49 AM" src="https://user-images.githubusercontent.com/85498185/184548874-52c60e7a-3d2e-480e-975d-07b31e8bed3a.png">
+<ins> **ℹ️ Information** </ins>
 | Action  | Command | 
 | ------ | ------- | 
 | Get information about the cryptocurrency by symbol  | `/get_info_ticker <ticker>` |
 | Get information about the cryptocurrency by name | `/get_info_name <name>` | 
+<img width="306" alt="Screenshot 2022-08-15 at 1 51 49 AM" src="https://user-images.githubusercontent.com/85498185/184548874-52c60e7a-3d2e-480e-975d-07b31e8bed3a.png">
 
-<ins> 💲 Price </ins>
+<ins> **💲 Price** </ins>
+</br>
 </br>
 <img width="253" alt="Screenshot 2022-08-15 at 1 52 38 AM" src="https://user-images.githubusercontent.com/85498185/184548887-c0be9317-43db-4d13-813d-336034c64a51.png">
 |Action  | Command |
