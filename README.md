@@ -17,29 +17,33 @@ Python, Heroku
 <img width="410" alt="Screenshot 2022-08-15 at 1 47 14 AM" src="https://user-images.githubusercontent.com/85498185/184548714-140f4c8d-d9b6-4933-8a66-6c7c12529cec.png">
 
 <ins> ℹ️ Information </ins>
-| Action  | Command | Result |
-| ------ | ------- | ------ |
-| Get information about the cryptocurrency by symbol  | `/get_info_ticker <ticker>` | <img width="306" alt="Screenshot 2022-08-15 at 1 51 49 AM" src="https://user-images.githubusercontent.com/85498185/184548874-52c60e7a-3d2e-480e-975d-07b31e8bed3a.png"> |
-| Get information about the cryptocurrency by name | `/get_info_name <name>` | <img width="306" alt="Screenshot 2022-08-15 at 1 51 49 AM" src="https://user-images.githubusercontent.com/85498185/184548874-52c60e7a-3d2e-480e-975d-07b31e8bed3a.png"> |
+<img width="306" alt="Screenshot 2022-08-15 at 1 51 49 AM" src="https://user-images.githubusercontent.com/85498185/184548874-52c60e7a-3d2e-480e-975d-07b31e8bed3a.png">
+| Action  | Command | 
+| ------ | ------- | 
+| Get information about the cryptocurrency by symbol  | `/get_info_ticker <ticker>` |
+| Get information about the cryptocurrency by name | `/get_info_name <name>` | 
 
 <ins> 💲 Price </ins>
-|Action  | Command | Result |
-| ------ | ------- | ------ |
-| Get crypto price by symbol (in USD) | `/get_price_by_ticker <ticker>` | <img width="253" alt="Screenshot 2022-08-15 at 1 52 38 AM" src="https://user-images.githubusercontent.com/85498185/184548887-c0be9317-43db-4d13-813d-336034c64a51.png"> |
-| Get crypto price by name (in USD) | `/get_price_by_name <name>` | <img width="253" alt="Screenshot 2022-08-15 at 1 52 38 AM" src="https://user-images.githubusercontent.com/85498185/184548887-c0be9317-43db-4d13-813d-336034c64a51.png"> |
-| Convert amount from USD to other currencies | `/convert_exchange_rate <price> <currency code>` | <img width="253" alt="Screenshot 2022-08-15 at 1 52 38 AM" src="https://user-images.githubusercontent.com/85498185/184548887-c0be9317-43db-4d13-813d-336034c64a51.png"> |
+<img width="253" alt="Screenshot 2022-08-15 at 1 52 38 AM" src="https://user-images.githubusercontent.com/85498185/184548887-c0be9317-43db-4d13-813d-336034c64a51.png">
+|Action  | Command |
+| ------ | ------- | 
+| Get crypto price by symbol (in USD) | `/get_price_by_ticker <ticker>` |
+| Get crypto price by name (in USD) | `/get_price_by_name <name>` | 
+| Convert amount from USD to other currencies | `/convert_exchange_rate <price> <currency code>` |
 
 <ins> 💹 Trending </ins>
-|Action  | Command | Result |
-| ------ | ------- | ------ |
-| Get top 10 cryptocurrncy as of today | `/top_10_cryptocurrency` | <img width="360" alt="Screenshot 2022-08-15 at 1 51 16 AM" src="https://user-images.githubusercontent.com/85498185/184548859-818f59bc-bd10-451d-ac39-573f66294828.png"> |
+<img width="360" alt="Screenshot 2022-08-15 at 1 51 16 AM" src="https://user-images.githubusercontent.com/85498185/184548859-818f59bc-bd10-451d-ac39-573f66294828.png">
+|Action  | Command | 
+| ------ | ------- | 
+| Get top 10 cryptocurrncy as of today | `/top_10_cryptocurrency` |
 
-<ins> 📰Updated News </ins>
-|Action  | Command | Result |
-| ------ | ------- | ------ |
-| Get all the latest news from different sources | `/get_news` | <img width="418" alt="Screenshot 2022-08-15 at 1 57 34 AM" src="https://user-images.githubusercontent.com/85498185/184549012-a3e8c09c-57c6-408f-aaba-6fe45aba9e11.png"> |
-| Get all the latest news from cointelegraph | `/get_news_cointelegraph` | <img width="418" alt="Screenshot 2022-08-15 at 1 57 34 AM" src="https://user-images.githubusercontent.com/85498185/184549012-a3e8c09c-57c6-408f-aaba-6fe45aba9e11.png"> |
-| Get all the latest news about a cryptocurrency | `/get_news_of <ticker>` | <img width="418" alt="Screenshot 2022-08-15 at 1 57 34 AM" src="https://user-images.githubusercontent.com/85498185/184549012-a3e8c09c-57c6-408f-aaba-6fe45aba9e11.png"> |
+<ins> 📰 Updated News </ins>
+<img width="418" alt="Screenshot 2022-08-15 at 1 57 34 AM" src="https://user-images.githubusercontent.com/85498185/184549012-a3e8c09c-57c6-408f-aaba-6fe45aba9e11.png">
+|Action  | Command | 
+| ------ | ------- | 
+| Get all the latest news from different sources | `/get_news` | 
+| Get all the latest news from cointelegraph | `/get_news_cointelegraph` |
+| Get all the latest news about a cryptocurrency | `/get_news_of <ticker>` |
 
 ## Deployment using Heroku
 This telegram bot is deployed on heroku using the ```Procfile``` which is in the repository 
